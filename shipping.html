@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+ <title>KD-Package</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Style2.css">
+
+<body>
+
+
+  <div class="w3-container w3-white">
+
+
+    <a href="index.php" class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-14" title="Home" style="width:77px">
+      <i class="fa fa-logo ws-text-green ws-hover-text-green" style="position:relative;font-size:42px!important;"></i>
+      <img src="kd_icon.jpg" alt="kd_icon" class="w3-image" width="1000">
+    </a>
+
+
+  </div>
+
+
+ <!-- Navbar -->
+
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+
+      <a href="service.php" class="w3-bar-item w3-button" style="width:100% !important">Back</a>
+      
+    </div>
+
+  
+
+
+  <!--   Shipping form   -->
+
+  
+  <form class="modal-content"  action="process-shipping.php" method="post" target="_blank" novalidate>
+
+    <div class="container">
+      
+      <h1>Shipping</h1>
+
+      <p>Please fill in your recipient information and package details in this form.</p>
+      
+      <hr>
+
+        <h3>Recipient information</h3>
+
+        <br>
+
+        <div>
+          <label for="name">Name of the recipient</label>
+          <input type="text" placeholder="Enter name" id="name" name="name">
+      </div>
+        
+      <div>
+        <label for="phnumber">Phone Number of the recipient</label>
+        <input type="text" id="phnumber" placeholder="Enter Phone Number" name="phnumber" required>
+      </div>
+
+       
+
+        <div>
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter address" name="address">
+        </div>
+   
+        <hr>
+
+        <h3>Package detail</h3>
+
+        <br>
+
+
+        <div>
+          <label for="pkaddress">Address of the package</label>
+          <input type="text" id="pkaddress" placeholder="Enter Address of the package" name="pkaddress" required>
+        </div>
+
+
+        <div>
+          <label for="Contents">Contents of the package</label>
+          <input type="text" id="Contents" placeholder="Enter Contents of the package" name="Contents" required>
+        </div>
+
+
+        <div>
+          <label for="weight">Weight (Kg)</label>
+          <input type="text" id="weight" placeholder="Enter weight only by number" name="weight" required>
+        </div>
+
+       
+        <div>
+          <label for="date">When would you like the package to arrive?</label>
+          <input type="text" id="date" placeholder="Enter date/time" name="date" required>
+        </div>
+      
+
+         <div class="clearfix">
+          <button type="submit" class="signupbtn">Ship</button>
+          </div>
+
+    </div>
+
+  </form>
+
+
+
+</body>
+</html>
